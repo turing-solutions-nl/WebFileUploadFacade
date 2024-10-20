@@ -57,6 +57,15 @@ public class AzureStorageAccountContainerFileUploader(BlobServiceClient _blobSer
         return await blobClient.DeleteIfExistsAsync();
     }
 
+    public async Task<bool> DeleteFileAsync(string fileLocation)
+    {
+        var container = fileLocation.GetContainerName();
+        var pathIncludingFileName = fileLocation.GetPath();
+
+        var blobClient = GetBlobClient(container, pathIncludingFileName);
+        return await blobClient.DeleteIfExistsAsync();
+    }
+
     private BlobClient GetBlobClient(string container, string blobLocation)
     {
         var containerClient = _blobServiceClient.GetBlobContainerClient(container);

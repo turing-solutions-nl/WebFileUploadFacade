@@ -36,6 +36,20 @@ namespace TuringSolutions.WebFileUploadFacade
         /// <returns>A <see cref="Uri"/> for accessing the blob temporarily.</returns>
         Uri GetTempBlobLink(string container, string pathIncludingFileName, int expirationTimeInMinutes = 1);
 
+        /// <summary>
+        /// Deletes a file from a specified container using the path including the file name.
+        /// </summary>
+        /// <param name="container">The blob storage container where the file is stored.</param>
+        /// <param name="pathIncludingFileName">The path to the file within the container (including the file name).</param>
+        /// <returns>A task representing the asynchronous operation, with a boolean result indicating success or failure of the delete operation.</returns>
         Task<bool> DeleteFileAsync(string container, string pathIncludingFileName);
+
+        /// <summary>
+        /// Deletes a file using its location, which can either be a URL or a formatted string representing the container and path.
+        /// </summary>
+        /// <param name="fileLocation">The location of the file to delete, which can be a URL or a format of "container/path/path/image.png".</param>
+        /// <returns>A task representing the asynchronous operation, with a boolean result indicating success or failure of the delete operation.</returns>
+        Task<bool> DeleteFileAsync(string fileLocation);
+
     }
 }
