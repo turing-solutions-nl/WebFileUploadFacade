@@ -5,7 +5,7 @@ public class GetContentTypeTests
 {
     [Test]
     [TestCase("ImJustAnImage.png", "image/png")]
-    [TestCase("ImJustAnImage.jpg", "image/jpg")]
+    [TestCase("ImJustAnImage.jpg", "image/jpeg")]
     [TestCase("ImJustAnImage.jpeg", "image/jpeg")]
     [TestCase("ImJustAnImage.pdf", "application/pdf")]
     public void GetContentType_With_Valid_Content_Type_Returns_Correct_ContentType(string fileName, string expectedContentType)

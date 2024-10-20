@@ -6,7 +6,7 @@ public class GenerateRandomFileNameTests
     [Test]
     [TestCase("myFlileName.jpg", "jpg")]
     [TestCase("with/a/path.png", "png")]
-    [TestCase("__sdsad2kLS.webo", "webp")]
+    [TestCase("__sdsad2kLS.webp", "webp")]
     public void GenerateRandomFileName_Generates_Correct_Random_Name(string fileName, string fileExtension)
     {
         var randomFileName = FileNameGenerator.GenerateRandomFileName(fileName, out var id);
