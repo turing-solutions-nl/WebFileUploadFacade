@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuringSolutions.WebFileUploadFacade", "TuringSolutions.WebFileUploadFacade\TuringSolutions.WebFileUploadFacade.csproj", "{C014878E-1814-49E9-AF9A-9F3A38B8843C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuringSolutions.WebFileUploadFacade.Tests", "TuringSolutions.WebFileUploadFacade.Tests\TuringSolutions.WebFileUploadFacade.Tests.csproj", "{1B4BD83D-97EA-4C73-BB93-67EBB38B6785}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C014878E-1814-49E9-AF9A-9F3A38B8843C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C014878E-1814-49E9-AF9A-9F3A38B8843C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C014878E-1814-49E9-AF9A-9F3A38B8843C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B4BD83D-97EA-4C73-BB93-67EBB38B6785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B4BD83D-97EA-4C73-BB93-67EBB38B6785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B4BD83D-97EA-4C73-BB93-67EBB38B6785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B4BD83D-97EA-4C73-BB93-67EBB38B6785}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
