@@ -1,5 +1,7 @@
 # WebFileUploadFacade
 
+[![publish](https://github.com/turing-solutions-nl/WebFileUploadFacade/actions/workflows/publish-nuget.yml/badge.svg)](https://github.com/turing-solutions-nl/WebFileUploadFacade/actions/workflows/publish-nuget.yml)
+
 This repository serves as a facade to simplify file uploads, offering an easy-to-use interface for uploading files to various sources. It is distributed as a C# NuGet package, designed for seamless integration into your projects.
 
 ## Features
