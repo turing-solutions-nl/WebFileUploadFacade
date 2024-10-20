@@ -35,5 +35,7 @@ namespace TuringSolutions.WebFileUploadFacade
         /// <param name="expirationTimeInMinutes">The expiration time for the generated link, in minutes. Defaults to 1 minute.</param>
         /// <returns>A <see cref="Uri"/> for accessing the blob temporarily.</returns>
         Uri GetTempBlobLink(string container, string pathIncludingFileName, int expirationTimeInMinutes = 1);
+
+        Task<bool> DeleteFileAsync(string container, string pathIncludingFileName);
     }
 }
